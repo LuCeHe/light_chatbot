@@ -33,11 +33,11 @@ has to be trained to know everything about the world.
 
 # Tricks that I would apply in another iteration
 
-- non autoregressive decoder model to speed up generation, since ideally the decoder would need
+- Non autoregressive decoder model to speed up generation, since ideally the decoder would need
 to be evaluated only once to produce a sentence, instead of looping for
 each word as one would normally do;
-- pretrain encoder of WoW architecture with BERT and decoder with GPT2, since that would drastically
+- Pretrain encoder of WoW architecture with BERT and decoder with GPT2, since that would drastically
 enrich the language of the architecture, and then fine tune it with the LIGHT datasets;
-- distil on a smaller model, since often one achieves better language by training on bigger models 
+- Distil on a smaller model, since often one achieves better language by training on bigger models 
 and then distil, than training directly on a small model. Then the small model would be faster at 
 inference time.
